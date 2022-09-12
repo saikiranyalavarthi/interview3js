@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        b{
+            color: blue;
+            font-size: 20px;
+        }
+        pre{
+            font-size: 16px;
+            color: brown;
+            justify-content: center;
+      
+        }
+    </style>
+</head>
+<body>
+    <pre>
+       <b> 1. What are promises and why do we need them?</b>
+Promises - Promises are used to handle asynchronous operations in JavaScript. They are easy to manage 
+ when dealing with multiple asynchronous operations where callbacks can create callback hell leading to 
+ unmanageable code. It also allows us to make API calls or fetch data from Web Servers successfully. If not 
+ able to do so fetches us with an error message.
+ It have three stages. 1. Pending               2. Resolved(fulfilled)          3. Rejected.
+
+<b> 2.What is the purpose of async/await keywords?</b>
+  --> Async/Await - They are used to handle promises more efficiently. The word async before a function 
+  always means that the function always returns a PROMISE. So, we therefore use async before the function name
+   to return a promise instead of a value. 
+
+   Await is used to wait for the result that is to be returned from the promise. So, we use await 
+  when we are calling a function which returns a promise. Also, we can use them(Async/Await) for making
+   API calls.
+
+   Await is always used with the keyword async.
+
+<b>3.What is hoisting?</b>
+In JS each and every variable declared using either var, let or const gets some memory space. 
+If variable is declared using var then it will get memory space in global scope. So if you will try to access the variable in this case before initialising it then it will return “undefined”.
+If variable is declared using either let or const then it will get memory space in separate scope not in global scope. So if you will try to access the variable in this case before initialising 
+it then it will return Reference error saying you cannot access the variable before initialization.
+It is a concept which says that you should always declare and initialise all the variables is JS before using them. 
+If we will not initiate the variables (means giving or assigning the value to a variable) before using it , then it will throw errors. So to avoid such errors we should follow the concept of Hoisting in JS
+
+
+<b>4.What is the DOM?</b>
+When a web page is loaded, the browser creates a Document Object Model of the page.
+The HTML DOM model is constructed as a tree of Objects:
+With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+JavaScript can react to all existing HTML events in the page
+JavaScript can create new HTML events in the page
+
+
+<b>5.Difference between undefined vs not defined vs NaN</b>
+
+The keyword “undefined” means there is a variable that is defined and contains space in memory without assigning value. 
+While “not defined” means the variable is not yet defined.
+The keyword "NAN" means a string is added/subatsrted/multiplied/divided with a number then it will show NAN
+
+<b>6.How many operators do we have in JS ?</b>
+<ul>
+    <li>Arithmetic Operators (+ , - , * , / , %)</li>
+    <li>Relational Operators (== ,=== , < , > , <= , >= , != ,!==)(
+        The === operator means "is exactly equal to," matching by both value and data type. The == operator means "is equal to," matching by value only)</li>
+    <li>Logical Operators(&&, ||, !)</li>
+    <li>Bit manipulation ( & (AND), |(OR) ,~(NOT) ,^(XOR))</li>
+    
+</ul>
+
+<b>7.What is callback hell</b>
+   Callback Hell - Callbacks are just the name/convention for using JavaScript. It instead of immediately 
+   returning results like other functions, takes time to produce the result. So, If we stuck in some 
+   particular call which prevents us from making further calls ends us into callback Hell.
+   The structure of callback hell looks like pyramid/arrow shape.
+   This makes our code look haphazard and makes it hard to understand.
+    We should always try to avoid using multiple Callbacks to end up falling into callback hell.
+    We use Promises to prevent using Callbacks and thereby avoiding Callback Hell.
+
+<b> 8.What is promise chaining</b>
+JavaScript promise chaining pattern that chains the promises to execute asynchronous operations in sequence.
+
+<b> 9.What are arrow functions?</b>
+Arrow functions were introduced in ES6.
+
+Arrow functions allow us to write shorter function syntax:
+
+let myFunction = (a, b) => a * b;
+eg:hello = () => {
+    return "Hello World!";
+  }
+
+<b>10.Give an example of async/await</b>
+</pre>
+</body>
+</html>
+    <script src="interview3.js"></script>
+</body>
+</html>
