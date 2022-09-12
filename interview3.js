@@ -43,7 +43,6 @@ hello = () => {
 //question10
 async function tryingPromise(){
 	console.log("i am inside the function using async/await");
-	const response=await fetch("https://api.github.com/users");
 	console.log("befoe the response is fetched");
 	const users= await response.json();
 	console.log("users resolved");
